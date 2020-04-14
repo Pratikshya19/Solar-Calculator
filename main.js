@@ -10,12 +10,10 @@ for(i=0; i<months.length; i++) {
 dailyUseKw = annualUseKw/365
 console.log(`DailyUseKW = ${dailyUseKw}`)
 return dailyUseKw;
-
 }
 
 function sunHours(){
 var hrs;
-
 var theZone = document.forms.solarForm.zone.selectedIndex 
 theZone += 1;
 switch(theZone){
@@ -40,7 +38,7 @@ switch(theZone){
 }
 console.log(hrs)
 return hrs;
-}//end
+}
 
 //finding panel choice
 function calculatePanel(){
@@ -55,7 +53,7 @@ return x;
 
 function calculateSolar(){
 var dailyUseKw = addMonths('mpc'); 
-console.log(dailyUseKw); //we know how much energy is needed
+console.log(dailyUseKw); 
 var sunHoursPerday = sunHours();
 console.log(sunHoursPerday); //hrs of sunshine/day
 

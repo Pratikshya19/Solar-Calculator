@@ -4,5 +4,5 @@ Creating Solar Calculator that explores the features of JavaScript concepts in i
 
 A real world solar calculator that calculates the number of solar panels required based on the your monthly electricity usage, where you live, and which panels you select. 
 
-Created by using HTML5, CSS3 and JS.
+Created by using HTML5, CSS3 and JavaScript.
 

@@ -27,7 +27,8 @@ a {
 
 body {
 	font-family: 'Roboto', sans-serif;
-	font-weight: 300; }
+	font-weight: 300; 
+}
 
 header, nav, main, img, footer {
 	max-width: 960px; margin: 0 auto;
@@ -41,6 +42,7 @@ nav {
 	font-size: 1rem;
 	text-decoration: none;
 }
+
 .header {
 	font-size: 1.5rem;
 	color: #fff;
@@ -102,7 +104,7 @@ main button {
 	border-radius: 10px;
 	margin-top: 1rem;
 	background: #004b8e;
-	background: linear-gradient(to bottom,  orangered 1%,#e05b13 100%);
+	background: linear-gradient(to bottom,orangered 1%,#e05b13 100%);
 }
 
 footer {
