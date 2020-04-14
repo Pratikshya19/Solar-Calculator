@@ -79,10 +79,10 @@ console.log(panelsNeeded)
 var feedback = "";
 feedback += "<p>Based on your avergae daily use of "+Math.round(dailyUseKw)+" kWh, you will need to purchase "+ panelsNeeded+ " "+ panelName+ " brand solar panels to save 100% of electricity bill.  </p>"
 feedback += "<h2>Additional Details</h2>"
-feedback += "<p>Your average daily electricity consumption: "+Math.round(dailyUseKw)+ "kwh per day</p>"
+feedback += "<p>Your average daily electricity consumption: "+Math.round(dailyUseKw)+"kWh/day</p>"
 feedback += "<p>Average sunshine hours per day: "+ sunHoursPerday+" hours</p>"
-feedback += "<p>Realisitc wants needed per hour: "+ Math.round(realWattNeeds)+ " watts/hour</p>"
-feedback += "<p>"+ panelName+" you selected genrates about "+panelOutput+ " watts per hour</p>"
+feedback += "<p>Based on the consumption energy needed per hour is: "+ Math.round(realWattNeeds)+ " watts/hour</p>"
+
 
 document.getElementById("feedback").innerHTML = feedback
 }

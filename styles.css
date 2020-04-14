@@ -1,88 +1,62 @@
-/* @charset "UTF-8"; */
-/* CSS RESET BY MYE WEB */
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html, body {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	border: 1;
 	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+nav {
+	background-color: orangered
 }
-
-html {
-  -webkit-text-size-adjust: none; }
-
-/*----------- apply a natural box layout model to all elements --------------*/
-* {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
 
 body {
-	line-height: 1;
+	line-height: 1.6;
 }
-ol, ul {
+
+nav, ul {
 	list-style: none;
+	font-size: 1.4rem;
+	font-weight: 700;
+	
+}
+a {
+	text-decoration: none;
+	color: lightgray;
+	font-family: 'Libre Baskerville', serif;
 }
 
 body {
 	font-family: 'Roboto', sans-serif;
-	font-weight: 300; /* loaded 300 and 700*/
+	font-weight: 300; }
+
+header, nav, main, img, footer {
+	max-width: 960px; margin: 0 auto;
 }
-header {
-	border-top: 40px solid #004b8e;
-	background-image: url(../images/sun.png);
-	/*Sun from https://openclipart.org/detail/3367/decorative-sun*/
-	background-repeat: no-repeat;
-}
-header h1 {
-	color: #e05b13;
-	font-size: 3rem;
-	
-	padding: .5rem 0 .5rem 60px;
-}
-header, nav, main, footer {max-width: 960px; margin: 0 auto;}
-nav {background-color: #004b8e}
-nav li {
-	float: left;
-	width: 25%;
-}
-nav li a {
-	color: #fff;
-	display: block;
-	text-decoration: none;
-	padding: .5rem 0;
-	width: 100%;
+
+nav {
+	background-color: orangered;
 	text-align: center;
-	border-right: 1px solid #000;
+	padding: 10px;
+	padding-top: 1rem;
+	font-size: 1rem;
+	text-decoration: none;
 }
-nav li.active a {background-color: #002751;}
-main {padding: .3rem 2%; display: block;}
+.header {
+	font-size: 1.5rem;
+	color: #fff;
+}
+
+main {
+	padding: .3rem 2%; 
+	display: block;
+}
 main h1 {
 	color: #e05b13;
 	font-size: 2rem;
 	padding-top: 1rem;
 }
 main h2 {
-	color: #e05b13;
+	color: #004b8e;
 	font-size: 1.5rem;
 	padding-top: 1rem;
 }
@@ -96,7 +70,10 @@ main fieldset {
 	padding: .5rem 2%;
 	margin-top: 1rem;
 }
-main fieldset legend {color:#004b8e; font-weight: 700;}
+main fieldset legend {
+	color:#004b8e; 
+	font-weight: 700;
+}
 
 main form label {
 	display: block;
@@ -125,19 +102,21 @@ main button {
 	border-radius: 10px;
 	margin-top: 1rem;
 	background: #004b8e;
-	background: linear-gradient(to bottom,  #004b8e 1%,#002751 100%);
+	background: linear-gradient(to bottom,  orangered 1%,#e05b13 100%);
 }
 
 footer {
 	text-align: center;
-	background: #004b8e;
+	background: #e05b13;
 	color: #fff;
 	font-size: .75rem;
 	padding: 1rem 0;
 }
 
 
-.keepOpen{clear: both;}
+.keepOpen{
+	clear: both;
+}
 
 main figure img {width: 100%;}
 

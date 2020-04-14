@@ -1,29 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Best Solar</title>
+        <title>Solar Calculator</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,700" rel="stylesheet">
         
         <link href="styles.css" rel="stylesheet" type="text/css">
     </head>
-    <header>
-        <h1>Best Solar</h1>
-        </header>
     <body>
         <nav>
             <ul>
-            <li class="active"><a href="index.html">Calculator</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="clients.html">Clients</a></li>
-            </ul>
-            <div class="keepOpen"></div>
+            <a href="index.html">SOLAR CALCULATOR</a>
             </nav>
             <main>
-            <h1>Calculator</h1>
-
             <form name="solarForm" action="" method="post">
 
             <fieldset id="mpc"><legend>Monthly Power Consumption</legend>
@@ -57,7 +47,7 @@
             
             
             <fieldset><legend>Sunshine Zone</legend>
-            <figure><img src="images/US-Solar-Zone-Map.jpg" alt="zone map"></figure>
+            <figure><img src="images/Solar-Zone-Map-US.jpg" alt="zone map"></figure>
             <p>Please use this map to determine which zone you are in.</p>
             <select name="zone">
                 <option>Zone 1</option>
@@ -82,7 +72,7 @@
         </form>
 
             <button onclick="calculateSolar();">Calculate Solar Needs</button>
-            <h2>Solar Reccomendation</h2>
+            <h2>Solar Recomendation</h2>
             <div id="feedback">
                 <p>Enter your information above to calculate your solar needs.</p></div>
             </main>
